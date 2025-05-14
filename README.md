@@ -1,4 +1,4 @@
-# 🦠 COVID-19 Data Analysis with MySQL
+#  COVID-19 Data Analysis with MySQL
 
 ## Overview
 
@@ -16,20 +16,9 @@ Split the data into two tables in SQL to simplify the visualisation
 
 ## Key Questions Answered
 
-- Which countries had the highest number of cases and deaths?
-- What is the global death rate?
-- How did the pandemic change over time?
+- Total Cases vs Total Deaths
+- Total cases vs population
 
 ## Example Queries
 
 ```sql
--- Total cases by country
-SELECT location, MAX(total_cases) AS total_cases
-FROM covid_data
-GROUP BY location
-ORDER BY total_cases DESC;
-
--- Global death rate
-SELECT 
-  SUM(total_deaths) / SUM(total_cases) AS global_death_rate
-FROM covid_data;
