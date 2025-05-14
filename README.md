@@ -11,14 +11,20 @@ This project analyzes global COVID-19 data using **MySQL**. The goal was to prac
 
 ## Project Files
 Split the data into two tables in SQL to simplify the visualisation
-- `covid_deaths.` 
-- `covid_data.` 
+- `covid_deaths.xlsx` 
+- `covid_data.xlsx` 
 
 ## Key Questions Answered
 
 - Total Cases vs Total Deaths
 - Total cases vs population
 
-## Example Queries
+## Example Query
 
 ```sql
+- Total Cases vs Total Deaths
+Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+From PortfolioProject..CovidDeaths
+Where location like '%states%'
+and continent is not null 
+order by 1,2
