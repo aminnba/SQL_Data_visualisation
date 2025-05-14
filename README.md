@@ -10,7 +10,7 @@ This project analyzes global COVID-19 data using **MySQL**. The goal was to prac
 - COVID-19 dataset from https://ourworldindata.org/covid-deaths
 
 ## Project Files
-Split the data into two tables in SQL to simplify the visualisation
+Split the data into two tables in Excel to simplify the visualization
 - `covid_deaths.xlsx` 
 - `covid_data.xlsx` 
 
